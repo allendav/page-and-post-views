@@ -35,7 +35,7 @@ class Allendav_Page_And_Post_Views {
 
 		$queried_object = get_queried_object();
 		if ( ! $queried_object ) {
-			return;
+			return false;
 		}
 
 		if ( property_exists( $queried_object, 'ID' ) ) {
